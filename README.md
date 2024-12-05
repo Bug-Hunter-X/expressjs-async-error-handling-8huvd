@@ -1,0 +1,3 @@
+# Unhandled Promise Rejection in Express.js
+
+This repository demonstrates a common error in Express.js applications: failing to handle promise rejections in asynchronous operations.  The `bug.js` file shows an example where an asynchronous function (`someAsyncOperation`) is called, but there's no proper error handling in the `.catch()` block.  This can lead to the application failing silently or behaving unexpectedly.  The `bugSolution.js` file provides the corrected code with proper error handling using a centralized middleware and detailed error responses.
